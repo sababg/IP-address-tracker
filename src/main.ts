@@ -1,5 +1,6 @@
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { API_KEY } from "../apiKey";
 
 // Fix for default marker icon - import as URLs
 const iconDefault = new L.Icon({
@@ -31,3 +32,27 @@ const marker = L.marker([51.505, -0.09]).addTo(map);
 
 // Add a popup to the marker
 marker.bindPopup("<b>Hello!</b><br>This is your location.").openPopup();
+
+async function initializeWithUserLocation() {
+  try {
+    const response = await fetch(
+      `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}`,
+    );
+    const data = await response.json();
+
+    const lat = data.location.lat;
+    const lang = data.location.lng;
+    map.setView([lat, lang], 13);
+    marker.setLatLng([lat, lang]);
+    marker
+      .bindPopup(
+        `<b>your location </b><br>${data.location.city} - ${data.location.country}`,
+      )
+      .openPopup();
+    console.log("data", data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+initializeWithUserLocation();
