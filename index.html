@@ -19,26 +19,33 @@
     />
     <link rel="stylesheet" href="./style/style.scss" />
 
-    <script src="./src/main.ts" defer></script>
+    <script src="./src/main.ts" type="module" defer></script>
 
     <title>Frontend Mentor | IP Address Tracker</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    IP Address Tracker Search for any IP address or domain IP Address Location
-    Timezone UTC
-    <!-- add offset value dynamically using the API -->
-    ISP
+    <header class="header-container">
+      <h1>IP Address Tracker</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search for any IP address or domain"
+        />
+        <button class="search-button">
+          <img src="./images/icon-arrow.svg" alt="Search" />
+        </button>
+      </div>
+      <!-- Add your search input here -->
+    </header>
+
+    <main>
+      <!-- IP Address Location Timezone UTC ISP -->
+
+      <div id="map"></div>
+    </main>
 
     <div class="attribution">
       Challenge by
