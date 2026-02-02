@@ -2,16 +2,20 @@
   "name": "ip-address-tracker",
   "version": "1.0.0",
   "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
+  "source": "main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
     "@types/node": "^25.2.0",
+    "parcel": "^2.16.4",
     "sass": "^1.97.3",
     "typescript": "^5.9.3"
   },
