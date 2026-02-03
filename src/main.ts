@@ -1,6 +1,7 @@
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { initializeWithUserLocation } from "./getCurrentLocation";
+import { initSearch } from "./searchInput";
 
 // Fix for default marker icon - import as URLs
 const iconDefault = new L.Icon({
@@ -18,7 +19,7 @@ L.Marker.prototype.options.icon = iconDefault;
 // Set default icon
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 // Initialize the map
-export const customMap = L.map("map").setView([51.505, -0.09], 23);
+export const customMap = L.map("map").setView([51.505, -0.09], 18);
 
 // Add tile layer from OpenStreetMap
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -34,3 +35,8 @@ export const customMarker = L.marker([51.505, -0.09]).addTo(customMap);
 customMarker.bindPopup("<b>Hello!</b><br>This is your location.").openPopup();
 
 initializeWithUserLocation();
+
+initSearch((ip) => {
+  console.log("IP from search.ts:", ip);
+  initializeWithUserLocation(ip);
+});
