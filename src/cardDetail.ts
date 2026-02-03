@@ -19,7 +19,7 @@ export const cardDetail = (data: Data): void => {
     ipAddress.textContent = data.ip;
     location.textContent = `${data.location.city}, ${US_STATE_ABBREVIATIONS[data.location.region]} ${data.location.postalCode}`;
     timezone.textContent = `UTC ${data.location.timezone}`;
-    isp.textContent = data.isp;
+    isp.textContent = data.isp || data.as.name;
   };
 
   return getData();
