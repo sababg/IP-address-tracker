@@ -2,7 +2,7 @@
 
 A responsive web application that allows users to search for and track IP addresses and domains, displaying their geographical location on an interactive map with detailed information.
 
-[link of challenge](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
+[Link of challenge](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
 
 ## Live Demo
 
