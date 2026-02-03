@@ -1,6 +1,7 @@
-import { API_KEY } from "../apiKey";
 import { cardDetail } from "./cardDetail";
 import { customMap, customMarker } from "./main";
+
+const API_KEY = process.env.IPIFY_API_KEY || "";
 
 export async function initializeWithUserLocation(ip?: string) {
   try {
