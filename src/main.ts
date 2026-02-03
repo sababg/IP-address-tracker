@@ -23,7 +23,7 @@ export const customMap = L.map("map").setView([51.505, -0.09], 18);
 
 // Add tile layer from OpenStreetMap
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
+  maxZoom: 20,
   attribution:
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(customMap);
