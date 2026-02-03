@@ -1,4 +1,5 @@
 import { API_KEY } from "../apiKey";
+import { cardDetail } from "./cardDetail";
 import { customMap, customMarker } from "./main";
 
 export async function initializeWithUserLocation(ip?: string) {
@@ -11,6 +12,7 @@ export async function initializeWithUserLocation(ip?: string) {
 
     const response = await fetch(url);
     const data = await response.json();
+    cardDetail(data);
 
     const lat = data.location.lat;
     const lang = data.location.lng;
