@@ -6,7 +6,7 @@ A responsive web application that allows users to search for and track IP addres
 
 ## Project Description
 
-The app automatically fetches your current IP address using the IPify API and displays your location on the map and in the card information box, If user enter an **IP** or **Domain** in the searchbox, the map and the card information box will be updated after clicking on the arrow button next to the search input. the US state abbreviations are automatically applied for cleaner display.
+The app automatically fetches your current IP address using the IPify API and displays your location on the map and in the card information box. If the user enters an **IP** or **Domain** in the searchbox, the map and the card information box will be updated after clicking on the arrow button next to the search input. The US state abbreviations are automatically applied for a cleaner display.
 
 ##
 
