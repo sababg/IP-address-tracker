@@ -59,15 +59,22 @@ body {
         height: 40%;
         width: 100%;
         background-image: $bg-desktop;
-        justify-content: start;
-        padding-top: 20px;
+        justify-content: center;
+        padding-top: 1.25rem;
     }
     @media (max-width: 768px) {
         aspect-ratio: 1;
         height: 35%;
         width: 100%;
         background-image: $bg-mobile;
-        padding-top: 10px;
+        padding-top: 1.25rem;
+    }
+    @media (max-width: 540px) {
+        aspect-ratio: 1;
+        height: 35%;
+        width: 100%;
+        background-image: $bg-mobile;
+        justify-content: start;
     }
 }
 
@@ -81,6 +88,9 @@ body {
     overflow: hidden;
     @media (max-width: 768px) {
         width: 70%;
+    }
+    @media (max-width: 360px) {
+        width: 80%;
     }
 
     input {
@@ -108,6 +118,9 @@ body {
             &::placeholder {
                 font-size: 1rem;
             }
+        }
+        @media (max-width: 360px) {
+            width: 95%;
         }
     }
 
@@ -214,6 +227,13 @@ body {
         padding: 1.5rem;
         transform: translate(-50%, -35%);
         width: 70%;
+    }
+
+    @media (max-width: 540px) {
+        transform: translate(-50%, -39%);
+    }
+    @media (max-width: 360px) {
+        width: 80%;
     }
 }
 
