@@ -10,7 +10,7 @@ A responsive web application that allows users to search for and track IP addres
 
 ##
 
-![Design preview for the IP address tracker coding challenge](./images/screenshots/Screenshot%202026-02-02%20234754.png)
+![Design preview for the IP address tracker coding challenge](./images/screenshots/Screenshot%202026-02-10%20093951.png)
 
 ## Project Description
 
@@ -118,10 +118,9 @@ IP-address-tracker/
 
 ##
 
-![Screenshot of the app](./images/screenshots/Screenshot%202026-02-02%20234754.png)
-![Screenshot of the app](./images/screenshots/Screenshot%202026-02-02%20234858.png)
-![Screenshot of the app](./images/screenshots/Screenshot%202026-02-02%20235013.png)
 ![Screenshot of the app](./images/screenshots/Screenshot%202026-02-02%20235036.png)
+![Screenshot of the app](./images/screenshots/Screenshot%202026-02-10%20094010.png)
+![Screenshot of the app](./images/screenshots/Screenshot%202026-02-02%20235013.png)
 
 ##
 
