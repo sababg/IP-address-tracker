@@ -18,6 +18,25 @@ The app automatically fetches your current IP address using the IPify API and di
 
 ##
 
+## development process
+
+At first I create the project, Then I add SCSS to it ( I choose this one to make it different from my other projects). Then
+I added necessary libraries like Leaflet and parcel. Then I started to add the map and the header with static location. Nex step was finding the user location with the help of API, ans set it as a default location. The next step was add the searched data for IP or Domain and send it through API to see the result. Tha last part for API was show the result data in the card. After that I worked on the small things like change the style or fix the brake points.
+
+##
+
+## challenges
+
+The challenges for me was the how to use the searchInput.ts file in the main.ts file. I used callback pattern to handle it. I have the onSubmit function as a callback function, and it get ip as a props and returns noting. So every time user change the search and click on submitted button, it will Receives the ip parameter (the input value) and log it and used it in the API (initializeWithUserLocation(ip)). This function will used this data in API and will show the result in the Map and card.
+
+##
+
+## potential improvements
+
+Show the user current location in the Map and card. clean code by putting different function in different files and use them in the main file.
+
+##
+
 ## Features
 
 - **IP Address Detection**: Automatically detects and displays your current IP address on initial load
